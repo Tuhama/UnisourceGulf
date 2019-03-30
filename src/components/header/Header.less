@@ -1,0 +1,45 @@
+
+@import '../../App';
+
+.header{
+  width:100%;
+  position:fixed;
+  top:0px;
+  background-color: rgba(192, 192, 192, 0.5);
+  border-bottom: 5px solid rgb(49, 181, 172);
+  z-index: 50;
+
+  display: grid;
+  grid-template-columns: auto auto 30px 1fr auto;
+
+  align-items: center;
+  justify-items: center;
+  height:  @header-height;
+}
+
+.side-margin{
+  width: 10vw;
+}
+
+
+.header-menu{
+  background-color: rgba(0, 0, 0, 0.0);
+  justify-self: center;
+  align-self: end;
+  font: normal normal normal 18px/1.4em barlow-medium,barlow,sans-serif;
+}
+
+.header-logo{
+
+  display: block;
+  border-radius: 0;
+  box-shadow: 3px 8px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(48, 48, 48, 1);
+  border: 0px solid rgba(48, 48, 48, 1);
+  overflow: hidden;
+}
+
+.social-icon{
+   font-size: 20px;
+  display: block;
+}
