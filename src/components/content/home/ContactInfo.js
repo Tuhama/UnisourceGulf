@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Home.less'
 import {Link} from "react-router-dom";
-import {Form, Input} from "antd";
+import {Button, Form, Input} from "antd";
 
 
 export default class ContactInfo extends Component {
@@ -12,6 +12,7 @@ export default class ContactInfo extends Component {
         return (
             <div className="contactInfo">
                 <WrappedMessagingForm/>
+                <div></div>
             </div>
         );
     }
@@ -38,8 +39,16 @@ class MessagingForm extends React.Component {
             },
         };
          const {getFieldDecorator} = this.props.form;
+        const formItemLayoutWithOutLabel = {
+            wrapperCol: {
+                xs: { span: 24, offset: 0 },
+                sm: { span: 20, offset: 4 },
+            },
+        };
         return (
-            <div className="contactInfo">
+            <div>
+                <h2>Please feel free to contact us anytime</h2>
+
                 <Form {...formItemLayout} onSubmit={this.handleSubmit}>
                     <Form.Item
                         label="E-mail"
@@ -65,6 +74,32 @@ class MessagingForm extends React.Component {
                         })(
                             <Input/>
                         )}
+                    </Form.Item>
+                    <Form.Item
+                        label={(
+                            <span>
+                                Subject&nbsp;
+                            </span>
+                        )}>
+                        {getFieldDecorator('subject', {
+                            rules: [{message: 'Please input your name!', whitespace: true}],
+                        })(
+                            <Input/>
+                        )}
+                    </Form.Item>
+                    <Form.Item
+                        label={(
+                            <span>
+                                Message&nbsp;
+                            </span>
+                        )}>
+                        {getFieldDecorator('subject', {
+                            rules: [{message: 'Please input your name!', whitespace: true}],
+                        })(
+                            <Input.TextArea/>)}
+                    </Form.Item>
+                    <Form.Item {...formItemLayoutWithOutLabel}>
+                        <Button type="primary" htmlType="submit">Submit</Button>
                     </Form.Item>
                 </Form>
             </div>

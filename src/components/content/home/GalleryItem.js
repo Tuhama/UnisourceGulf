@@ -7,7 +7,7 @@ export default class GalleryItem extends Component {
     render() {
         return (
             <div className="gallery-item">
-                <div className="grid-item-logo">
+                <div className="gallery-item-logo">
                     <Link to={this.props.address}>
                         <img src={this.props.img} style={{display: "block", margin: "0 auto"}} alt={this.props.alt}/>
                     </Link>

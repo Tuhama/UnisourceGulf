@@ -1,8 +1,5 @@
 .ant-carousel .slick-slide {
-  height: 160px;
-  line-height: 160px;
   overflow: hidden;
-  color: rgb(49, 181, 172);
 }
 .ant-carousel .slick-dots li{
   background-color: rgb(49, 181, 172);
@@ -13,6 +10,14 @@
   border: 1px solid rgba(49, 181, 172, 1);
 }
 
+.carousel-container{
+  display: flex;
+  position: relative;
+}
+.carousel-bg{
+    overflow:auto;
+  width: 100%;
+}
 .info{
     position: relative;
   color: #606060;
@@ -34,7 +39,7 @@
 }
 
 
-.grid-item-logo{
+.gallery-item-logo{
   height:100px;
 display: block;
 }
@@ -45,5 +50,6 @@ display: block;
 }
 
 .contactInfo{
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

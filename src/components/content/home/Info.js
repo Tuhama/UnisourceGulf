@@ -15,7 +15,8 @@ export default class Info extends Component {
                     width: "100%",
                     height: "100%",
                     opacity: "0.3",
-                    backgroundAttachment: "fixed"
+                    backgroundAttachment: "fixed",
+                    backgroundSize:"cover",
                 }}></div>
                 {/*            <div className="info" style={{
                 backgroundImage: 'linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(info-bg.webp)',
@@ -25,6 +26,11 @@ export default class Info extends Component {
                 backgroundAttachment: "fixed"
             }}>*/}
 
+
+            <div style={{marginLeft:"5vw"}}>
+                <br/>
+                <br/>
+                <br/>
                 <span style={{
                     fontFamily: "signika,sans-serif",
                     fontSize: "22px",
@@ -105,6 +111,7 @@ export default class Info extends Component {
                             </li>
                     </ul>
                 </span>
+            </div>
 
             </div>
         );

@@ -15,7 +15,8 @@ export default class Home extends Component {
             <Info />
 
             <PartnersGallery />
-<ContactInfo/>
+
+            <ContactInfo/>
         </div>;
     }
 }
