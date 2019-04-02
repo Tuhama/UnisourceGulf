@@ -33,7 +33,7 @@ export default class PartnersGallery extends Component {
                 <div className="gallery">
                     {partners.map(
                         p => {
-                            return <GalleryItem alt={p.alt} text={p.text} address={p.address} img={p.img}/>;
+                            return <GalleryItem key={p.alt} alt={p.alt} text={p.text} address={p.address} img={p.img}/>;
                         }
                     )}
                 </div>

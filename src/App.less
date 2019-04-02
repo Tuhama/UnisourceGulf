@@ -1,6 +1,5 @@
 
-@header-height: 95px;
-@side-margin-width: 10vw;
+@import "theme";
 
 .App{
   width: 100vw;
@@ -14,11 +13,6 @@
   width: @side-margin-width;
 }
 
-.header-placeholder{
-  grid-area: header;
-  height:  @header-height;
-}
-
 .content{
   grid-area: content;
   width:calc( 100vw - 2*@side-margin-width);
@@ -27,6 +21,11 @@
 .footer{
   grid-area: footer;
   height:  @header-height;
+  justify-self: center;
+  font-size: 15px;
+  font-family: jura,sans-serif;
+  font-weight: bold;
+  text-align: center;
 }
 
 .main{

@@ -1,8 +1,10 @@
+@import '../../../theme';
+
 .ant-carousel .slick-slide {
   overflow: hidden;
 }
 .ant-carousel .slick-dots li{
-  background-color: rgb(49, 181, 172);
+  background-color: @color-main;
   border-radius: 50%;
 }
 
@@ -46,10 +48,14 @@ display: block;
 
 
 .gallery-item:nth-child(even) {
-  background-color: rgb(235, 244, 252);
+  background-color: @color-secondary;
 }
 
 .contactInfo{
+  background-color: @color-secondary;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-items: center;
+  padding-top: 2vw;
 }

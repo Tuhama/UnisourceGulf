@@ -42,12 +42,14 @@ export default class Header extends Component {
                     className="header-menu"
                 >
                     <Menu.Item key="home">
-                        Home
+                        <NavLink to={"/"}>
+                            Home
+                        </NavLink>
                     </Menu.Item>
 
                     <SubMenu title={<span className="submenu-title-wrapper">Services</span>}>
 
-                        <Menu.Item key="currentprojects">Current Projects</Menu.Item>
+                        <Menu.Item key="currentprojects"> <NavLink to={"/currentProjects"}>Current Projects</NavLink></Menu.Item>
                         <Menu.Item key="recentprojects">Recent Projects</Menu.Item>
                         <Menu.Item key="services">Services</Menu.Item>
                         <Menu.Item key="solutions">Solutions</Menu.Item>

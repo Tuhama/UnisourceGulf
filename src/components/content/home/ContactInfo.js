@@ -1,18 +1,37 @@
 import React, {Component} from 'react';
 import './Home.less'
-import {Link} from "react-router-dom";
+
 import {Button, Form, Input} from "antd";
+import {TUNIS_ADDRESS,KUWAIT_ADDRESS,BOX_ADDRESS,MOBILE1,MOBILE2,EMAIL} from '../../../constants';
 
 
 export default class ContactInfo extends Component {
 
     render() {
-        const WrappedMessagingForm = Form.create({ name: 'messaging-form' })(MessagingForm);
+        const WrappedMessagingForm = Form.create({name: 'messaging-form'})(MessagingForm);
 
         return (
             <div className="contactInfo">
                 <WrappedMessagingForm/>
-                <div></div>
+                <div>
+                    <span className={"font-5"}>Our Address</span>
+                </div>
+                <div>
+                    <br/>
+                    <span>
+                        {TUNIS_ADDRESS}
+                        <br/>
+                        {KUWAIT_ADDRESS}
+                        <br/>
+                        {BOX_ADDRESS}
+                        <br/>
+                        {MOBILE1}
+                        <br/>
+                        {MOBILE2}
+                        <br/>
+                        {EMAIL}
+                    </span>
+                </div>
             </div>
         );
     }
@@ -27,6 +46,7 @@ class MessagingForm extends React.Component {
             }
         });
     }
+
     render() {
         const formItemLayout = {
             labelCol: {
@@ -38,17 +58,18 @@ class MessagingForm extends React.Component {
                 sm: {span: 16},
             },
         };
-         const {getFieldDecorator} = this.props.form;
+        const {getFieldDecorator} = this.props.form;
         const formItemLayoutWithOutLabel = {
             wrapperCol: {
-                xs: { span: 24, offset: 0 },
-                sm: { span: 20, offset: 4 },
+                xs: {span: 24, offset: 0},
+                sm: {span: 20, offset: 4},
             },
         };
         return (
-            <div>
-                <h2>Please feel free to contact us anytime</h2>
-
+            <div >
+                <span className={"font-5"}>Please feel free to contact us anytime</span>
+                <br/>
+                <br/>
                 <Form {...formItemLayout} onSubmit={this.handleSubmit}>
                     <Form.Item
                         label="E-mail"
@@ -99,7 +120,7 @@ class MessagingForm extends React.Component {
                             <Input.TextArea/>)}
                     </Form.Item>
                     <Form.Item {...formItemLayoutWithOutLabel}>
-                        <Button type="primary" htmlType="submit">Submit</Button>
+                        <Button type="primary" htmlType="submit" style={{alignSelf:"center"}}>Submit</Button>
                     </Form.Item>
                 </Form>
             </div>

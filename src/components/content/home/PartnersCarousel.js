@@ -5,7 +5,7 @@ import './Home.less'
 export default class PartnersCarousel extends Component {
 
     render() {
-        return <Carousel /*autoplay*/>
+        return <Carousel autoplay>
                 <div>
                     <div className="carousel-container">
                         <img src="partners/2n-bg.webp" alt="" className="carousel-bg"/>
