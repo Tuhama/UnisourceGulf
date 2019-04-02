@@ -5,7 +5,6 @@ import Home from "./components/content/home/Home";
 
 import {Switch, Route} from "react-router-dom";
 import Footer from "./components/Footer";
-import ContactUs from "./components/content/contactUs/ContactUs";
 import Careers from "./components/content/about/Careers";
 import CompanyHistory from "./components/content/about/CompanyHistory";
 import CompanyTeam from "./components/content/about/CompanyTeam";
@@ -33,8 +32,6 @@ class App extends Component {
 
                     <Switch>
                         <Route exact path="/" component={Home}/>
-
-                        <Route path="/contactUs" component={ContactUs}/>
 
                         <Route path="/careers" component={Careers}/>
                         <Route path="/companyHistory" component={CompanyHistory}/>
