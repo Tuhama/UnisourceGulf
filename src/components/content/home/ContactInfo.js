@@ -3,6 +3,7 @@ import './Home.less'
 
 import {Button, Form, Input} from "antd";
 import {TUNIS_ADDRESS,KUWAIT_ADDRESS,BOX_ADDRESS,MOBILE1,MOBILE2,EMAIL} from '../../../constants';
+//import {GoogleApiWrapper} from "google-maps-react";
 
 
 export default class ContactInfo extends Component {
@@ -11,28 +12,37 @@ export default class ContactInfo extends Component {
         const WrappedMessagingForm = Form.create({name: 'messaging-form'})(MessagingForm);
 
         return (
+
+                <a id="ContactInfo" href="#">
             <div className="contactInfo">
-                <WrappedMessagingForm/>
+                <WrappedMessagingForm />
                 <div>
                     <span className={"font-5"}>Our Address</span>
                 </div>
                 <div>
-                    <br/>
-                    <span>
+
+
+                    <div>
+                        <br/>
+                        <span>
                         {TUNIS_ADDRESS}
-                        <br/>
-                        {KUWAIT_ADDRESS}
-                        <br/>
-                        {BOX_ADDRESS}
-                        <br/>
-                        {MOBILE1}
-                        <br/>
-                        {MOBILE2}
-                        <br/>
-                        {EMAIL}
+                            <br/>
+                            {KUWAIT_ADDRESS}
+                            <br/>
+                            {BOX_ADDRESS}
+                            <br/>
+                            {MOBILE1}
+                            <br/>
+                            {MOBILE2}
+                            <br/>
+                            {EMAIL}
                     </span>
+                    </div>
+                   {/* <GoogleApiWrapper/>*/}
                 </div>
             </div>
+                </a>
+
         );
     }
 }

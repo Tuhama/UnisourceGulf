@@ -1,0 +1,74 @@
+@import "../../../theme";
+.n-container{
+  background-color: lavender;
+  padding-bottom: 3vw;
+}
+.n-header{
+  z-index: 1;
+  width: 100%;
+  height: 140px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns:auto auto;
+  align-items: center;
+}
+.n-header-bg{
+  position: absolute;
+  background-image: url(../../../images/partners/2n/headerBg.webp);
+  background-repeat: no-repeat;
+  width: 100%;
+  height:100%;
+  background-size:cover;
+  z-index: -1;
+}
+.n-header-font{
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.n-2c-product-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.n-3c-product-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.n-4c-product-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.n-main-title{
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #2B689C;
+  letter-spacing: normal;
+  background-color: @color-secondary;
+}
+.n-product-code{
+  font-size: 24px;
+  display: block;
+}
+.n-product-disc{
+  display: block;
+}

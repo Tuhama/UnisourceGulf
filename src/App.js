@@ -14,6 +14,10 @@ import GrandStream from "./components/content/partners/GrandStream";
 import Loytec from "./components/content/partners/Loytec";
 import TwoN from "./components/content/partners/TwoN";
 import UniChatBot from "./components/ChatBot";
+import RecentProjects from "./components/content/services/recentProjects/RecentProjects";
+import Services from "./components/content/services/services/Services";
+import Solutions from "./components/content/services/solutions/Solutions";
+import CurrentProjects from "./components/content/services/currentProjects/CurrentProjects";
 
 class App extends Component {
     render() {
@@ -33,6 +37,11 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={Home}/>
 
+                        <Route path="/currentProjects" component={CurrentProjects}/>
+                        <Route path="/recentProjects" component={RecentProjects}/>
+                        <Route path="/services" component={Services}/>
+                        <Route path="/solutions" component={Solutions}/>
+
                         <Route path="/careers" component={Careers}/>
                         <Route path="/companyHistory" component={CompanyHistory}/>
                         <Route path="/companyTeam" component={CompanyTeam}/>
@@ -41,7 +50,7 @@ class App extends Component {
                         <Route path="/engoPlanet" component={EngoPlanet}/>
                         <Route path="/grandStream" component={GrandStream}/>
                         <Route path="/loytec" component={Loytec}/>
-                        <Route path="/2n" component={TwoN}/>
+                        <Route path="/2N" component={TwoN}/>
 
                     </Switch>
 

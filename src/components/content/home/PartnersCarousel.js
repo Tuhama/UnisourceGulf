@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 import {Carousel} from 'antd';
-import './Home.less'
+import './Home.less';
+import nLogo from '../../../images/partners/2n/2n-logo.webp';
+import nBg from '../../../images/partners/2n/2n-bg.webp';
+import grandLogo from '../../../images/partners/grandStream/grandstream-logo.webp';
+import grandBg from '../../../images/partners/grandStream/grandstream-bg.webp';
+import loytecLogo from '../../../images/partners/loytec/loytec-logo.webp';
+import loytecBg from '../../../images/partners/loytec/loytec-bg.webp';
+import engoBg from '../../../images/partners/engoPlanet/engo-bg.webp';
 
 export default class PartnersCarousel extends Component {
 
@@ -8,7 +15,7 @@ export default class PartnersCarousel extends Component {
         return <Carousel autoplay>
                 <div>
                     <div className="carousel-container">
-                        <img src="partners/2n-bg.webp" alt="" className="carousel-bg"/>
+                        <img src={nBg} alt="" className="carousel-bg"/>
                       <div style={{position:"absolute",bottom: "30px",right: "10px",width:"55%"}}>
                             <div>
                                 <span style={{letterSpacing:"0.15em",fontSize:"21px"}}>GIVE YOUR VISITORS A FIRST CLASS WELCOME</span>
@@ -22,7 +29,7 @@ export default class PartnersCarousel extends Component {
                           <br/>
                           <br/>
                             <div style={{float:"right"}}>
-                            <img src="partners/2n-logo.webp" alt=""/>
+                            <img src={nLogo} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -30,11 +37,11 @@ export default class PartnersCarousel extends Component {
                 </div>
                 <div>
                     <div className="carousel-container">
-                        <img src="partners/grandstream-bg.webp" alt="" className="carousel-bg"/>
+                        <img src={grandBg} alt="" className="carousel-bg"/>
                         <div style={{position:"absolute",bottom: "170px",right: "10px",width:"50%",color:"rgb(255,255,255)",display:"flex",flexDirection: "column" }}>
 
                             <div style={{alignSelf: "flex-end" }}>
-                                <img src="partners/grandstream-logo.webp" alt=""/>
+                                <img src={grandLogo} alt=""/>
                             </div>
                             <div style={{height:"20vh"}}></div>
                                 <span>
@@ -47,11 +54,11 @@ export default class PartnersCarousel extends Component {
                 </div>
                 <div>
                     <div className="carousel-container">
-                        <img src="partners/loytec-bg.webp" alt="" className="carousel-bg"/>
+                        <img src={loytecBg} alt="" className="carousel-bg"/>
                         <div style={{position:"absolute",bottom: "170px",left: "10px",width:"50%",display:"flex",flexDirection: "column" }}>
 
                             <div style={{alignSelf: "flex-start" }}>
-                                <img src="partners/loytec-logo.webp" alt=""/>
+                                <img src={loytecLogo} alt=""/>
                             </div>
                             <div style={{height:"10vh"}}></div>
                             <span  style={{letterSpacing:"0.15em",fontSize:"21px"}}>
@@ -62,7 +69,7 @@ export default class PartnersCarousel extends Component {
                 </div>
                 <div>
                     <div className="carousel-container">
-                        <img src="partners/engo-bg.webp" alt="" className="carousel-bg"/>
+                        <img src={engoBg} alt="" className="carousel-bg"/>
                         <div style={{position:"absolute",bottom: "50px",right: "10px",width:"50%",display:"flex",flexDirection: "column" }}>
                             <span  style={{letterSpacing:"0.15em",fontSize:"21px"}}>
                         Powered only by renewable energy sources, EnGoPLANET Smart Street Lights will illuminate

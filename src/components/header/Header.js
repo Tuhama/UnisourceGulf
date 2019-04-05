@@ -3,6 +3,7 @@ import './Header.less';
 import {Menu, Icon} from 'antd';
 import {NavLink} from 'react-router-dom';
 import {FACEBOOK_ADDRESS, TWITTER_ADDRESS, INSTAGRAM_ADDRESS} from '../../constants';
+import logo from '../../images/app/logo-small.webp';
 
 const SubMenu = Menu.SubMenu;
 
@@ -24,7 +25,7 @@ export default class Header extends Component {
                 <div className="side-margin"></div>
 
                 <div className="header-logo">
-                    <img src="/logo-small.webp" alt={"logo"}/>
+                    <img src={logo} alt={"logo"}/>
                 </div>
 
 
@@ -49,30 +50,79 @@ export default class Header extends Component {
 
                     <SubMenu title={<span className="submenu-title-wrapper">Services</span>}>
 
-                        <Menu.Item key="currentprojects"> <NavLink to={"/currentProjects"}>Current Projects</NavLink></Menu.Item>
-                        <Menu.Item key="recentprojects">Recent Projects</Menu.Item>
-                        <Menu.Item key="services">Services</Menu.Item>
-                        <Menu.Item key="solutions">Solutions</Menu.Item>
+                        <Menu.Item key="currentProjects">
+                            <NavLink to={"/currentProjects"}>
+                                Current Projects
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="recentProjects">
+                            <NavLink to={"/recentProjects"}>
+                                Recent Projects
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="services">
+                            <NavLink to={"/services"}>Services
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="solutions">
+                            <NavLink to={"/solutions"}>
+                                Solutions
+                            </NavLink>
+                        </Menu.Item>
 
                     </SubMenu>
-                    <SubMenu title={<span className="submenu-title-wrapper">Partners</span>}>
+                    <SubMenu title={<span className="submenu-title-wrapper"><a href="/#Partners">Partners</a></span>}>
 
-                        <Menu.Item key="engoplanet">EngoPlanet</Menu.Item>
-                        <Menu.Item key="2n">2N®</Menu.Item>
-                        <Menu.Item key="grandstream">Grandstream</Menu.Item>
-                        <Menu.Item key="bodet">Bodet</Menu.Item>
-                        <Menu.Item key="loytec">Loytec</Menu.Item>
+                        <Menu.Item key="engoPlanet">
+                            <NavLink to={"/engoPlanet"}>
+                                EngoPlanet
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="2N">
+                            <NavLink to={"/2N"}>
+                            2N®
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="grandStream">
+                            <NavLink to={"/grandStream"}>
+                                Grandstream
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="bodet">
+                            <NavLink to={"/bodet"}>
+                                Bodet
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="loytec">
+                            <NavLink to={"/loytec"}>
+                                Loytec
+                            </NavLink>
+                        </Menu.Item>
 
                     </SubMenu>
                     <SubMenu title={<span className="submenu-title-wrapper">About</span>}>
 
-                        <Menu.Item key="companyhistory">Company History</Menu.Item>
-                        <Menu.Item key="companyteam">Company Team</Menu.Item>
-                        <Menu.Item key="careers">Careers</Menu.Item>
+                        <Menu.Item key="companyHistory">
+                            <NavLink to={"/companyHistory"}>
+                                Company History
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="companyTeam">
+                            <NavLink to={"/companyTeam"}>
+                                Company Team
+                            </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="careers">
+                            <NavLink to={"/careers"}>
+                                Careers
+                            </NavLink>
+                        </Menu.Item>
 
                     </SubMenu>
                     <Menu.Item key="contactus">
+                        <a href="/#ContactInfo">
                         Contact Us
+                        </a>
                     </Menu.Item>
                 </Menu>
 
