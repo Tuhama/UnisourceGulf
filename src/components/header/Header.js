@@ -35,6 +35,13 @@ export default class Header extends Component {
                     <a href={INSTAGRAM_ADDRESS} rel="noopener noreferrer" target="_blank"> <Icon type="instagram" className="social-icon"/></a>
                 </div>
 
+                <Media query="(max-height: 599px)">
+                    {matches =>
+                        matches ? (
+                            <span>
+
+                              </span>
+                        ) : (
 
                 <Menu
                     onClick={this.handleClick}
@@ -125,7 +132,9 @@ export default class Header extends Component {
                         </a>
                     </Menu.Item>
                 </Menu>
-
+                        )
+                    }
+                </Media>
                 <div className="side-margin"></div>
             </div>);
     }
