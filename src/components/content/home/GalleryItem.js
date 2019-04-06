@@ -9,7 +9,7 @@ export default class GalleryItem extends Component {
             <div className="gallery-item">
                 <div className="gallery-item-logo">
                     <Link to={this.props.address}>
-                        <img src={this.props.img} style={{display: "block", margin: "0 auto"}} alt={this.props.alt}/>
+                        <img src={this.props.img} style={{width:"80%",height:"80%",display: "block",objectFit: "scale-down", margin: "0 auto"}} alt={this.props.alt}/>
                     </Link>
                 </div>
                 <br/>

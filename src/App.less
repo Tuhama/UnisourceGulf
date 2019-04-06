@@ -4,18 +4,28 @@
 .App{
   width: 100vw;
 }
+
 .r-side-margin{
   grid-area: rside;
+  .side();
+  /*
   width: @side-margin-width;
+  */
 }
 .l-side-margin{
   grid-area: lside;
+  .side();
+  /*
   width: @side-margin-width;
+  */
 }
 
 .content{
   grid-area: content;
-  width:calc( 100vw - 2*@side-margin-width);
+  width:100vw;
+  @media screen and (min-width: 600px) {
+  width:calc( 100vw - 2*@side-margin-width)}
+
 }
 
 .footer{

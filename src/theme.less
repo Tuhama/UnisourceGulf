@@ -1,15 +1,27 @@
 @header-height: 95px;
+
+
 @side-margin-width: 10vw;
+
+
 
 @color-main:rgb(49, 181, 172);
 @color-secondary:rgb(235, 244, 252);
+
 
 
 .header-placeholder{
   grid-area: header;
   height:  @header-height;
 }
-
+.side{
+  @media screen and (max-width: 600px) {
+    width:0;
+  }
+  @media screen and (min-width: 600px) {
+    width:@side-margin-width;
+  }
+}
 .font-5{
   font: normal normal normal 25px/1.4em 'open sans',sans-serif;
   font-weight: 400;

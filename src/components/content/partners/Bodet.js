@@ -43,7 +43,8 @@ export default class Bodet extends Component {
                             <span>Automatic clock adjustment for DST.</span>
                         </li>
                     </ul>
-                    <a href="https://www.bodet-time.com/clocks/select-a-clock.html" target="_blank">
+                    <a href="https://www.bodet-time.com/clocks/select-a-clock.html" target="_blank"
+                       rel="noopener noreferrer">
                         <button className="more-button">Read More</button>
                     </a>
 
@@ -75,7 +76,7 @@ export default class Bodet extends Component {
                             <span>Microphones to record and send messages.</span>
                         </li>
                     </ul>
-                    <a href="https://www.bodet-time.com/audio-systems.html" target="_blank">
+                    <a href="https://www.bodet-time.com/audio-systems.html" target="_blank" rel="noopener noreferrer">
                         <button className="more-button">Read More</button>
                     </a>
                 </div>
@@ -87,31 +88,34 @@ export default class Bodet extends Component {
                     <span>
                         Bodet Sport has designed and manufactured scoreboards for sport facilities such as gymnasiums, stadiums and arenas: scoreboards, LED video display. Our solutions are developed in conjunction with industry experts and are certified by the major sports federations.
                     </span>
-<div className="responsiv-3">
-                    <div className="b-subsection">
-                    <img src={designsScoreboards} alt="Bodet"/>
-                    <span>Bodet designs Scoreboards for a wide range of sports: basketball, handball, volleyball, tennis, football, rugby and many more...</span>
-                    <a href="http://www.bodet-sport.com/en/scoreboards/scoreboards.html" target="_blank">
-                        <button className="more-button">Read More</button>
-                    </a>
-                    </div>
+                    <div className="responsiv-3">
+                        <div className="b-subsection">
+                            <img src={designsScoreboards} alt="Bodet"/>
+                            <span>Bodet designs Scoreboards for a wide range of sports: basketball, handball, volleyball, tennis, football, rugby and many more...</span>
+                            <a href="http://www.bodet-sport.com/en/scoreboards/scoreboards.html" target="_blank"
+                               rel="noopener noreferrer">
+                                <button className="more-button">Read More</button>
+                            </a>
+                        </div>
 
-                    <div className="b-subsection">
-                    <img src={Sport} alt="Bodet"/>
-                    <span>Bodet Sport develops video display solutions to boost and intensify your sporting events...</span>
-                    <a href="https://www.bodet-sport.com/video-display.html" target="_blank">
-                        <button className="more-button">Read More</button>
-                    </a>
-                    </div>
+                        <div className="b-subsection">
+                            <img src={Sport} alt="Bodet"/>
+                            <span>Bodet Sport develops video display solutions to boost and intensify your sporting events...</span>
+                            <a href="https://www.bodet-sport.com/video-display.html" target="_blank"
+                               rel="noopener noreferrer">
+                                <button className="more-button">Read More</button>
+                            </a>
+                        </div>
 
-                    <div className="b-subsection">
-                    <img src={Scorepad} alt="Bodet"/>
-                    <span>Scorepad is the keyboard to easily manage all our indoor and outdoor scoreboards as well as our LED video solutions.</span>
-                    <a href="http://www.bodet-sport.com/scoreboard/scorepad.html" target="_blank">
-                        <button className="more-button">Read More</button>
-                    </a>
+                        <div className="b-subsection">
+                            <img src={Scorepad} alt="Bodet"/>
+                            <span>Scorepad is the keyboard to easily manage all our indoor and outdoor scoreboards as well as our LED video solutions.</span>
+                            <a href="http://www.bodet-sport.com/scoreboard/scorepad.html" target="_blank"
+                               rel="noopener noreferrer">
+                                <button className="more-button">Read More</button>
+                            </a>
+                        </div>
                     </div>
-</div>
                 </div>
             </div>)
     }

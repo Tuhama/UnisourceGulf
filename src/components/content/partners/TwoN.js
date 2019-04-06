@@ -54,7 +54,7 @@ export default class TwoN extends Component {
 
                 </div>
 
-                <a id="" href="#IPIntercoms">
+                <a id="IPIntercoms" href="#">
                 <div className="n-main-title">IP Intercoms</div>
                 <div className={"n-2c-product-section"}>
                     <div>
@@ -94,7 +94,7 @@ export default class TwoN extends Component {
                     </div>
                 </div>
                 </a>
-                <a id="" href="#IPAccessControl">
+                <a id="IPAccessControl" href="#">
                 <div className="n-main-title">IP Access Control</div>
                 <div className={"n-2c-product-section"}>
                     <div>
@@ -119,7 +119,7 @@ export default class TwoN extends Component {
                     </div>
                  </div>
                 </a>
-                <a id="" href="#GSMGATEWAYS">
+                <a id="GSMGATEWAYS" href="#">
                 <div className="n-main-title">GSM GATEWAYS</div>
                 <div className={"n-2c-product-section"}>
                     <div>
@@ -134,7 +134,7 @@ export default class TwoN extends Component {
                     </div>
                 </div>
                 </a>
-                <a id="" href="#SIPAudioSystems">
+                <a id="SIPAudioSystems" href="#">
                 <div className="n-main-title">SIP Audio Systems</div>
                 <div className={"n-4c-product-section"}>
                     <div>
@@ -155,7 +155,7 @@ export default class TwoN extends Component {
                     </div>
                 </div>
                 </a>
-                <a id="" href="#NETAudioSystems">
+                <a id="NETAudioSystems" href="#">
                 <div className="n-main-title">NET Audio Systems</div>
                 <div className={"gs-3c-product-section"}>
                     <div>

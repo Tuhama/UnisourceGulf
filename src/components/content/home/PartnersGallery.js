@@ -28,8 +28,9 @@ export default class PartnersGallery extends Component {
 
         ];
         return (
-            <a id="Partners" href="#">
+
             <div style={{pointerEvents: "none"}}>
+                <a id="Partners" href="#">
                 <h2 style={{
                     position: "relative",
                     margin: "0.3em",
@@ -37,6 +38,7 @@ export default class PartnersGallery extends Component {
                 }}>
                     Partners
                 </h2>
+                </a>
                 <div className="gallery">
                     {partners.map(
                         p => {
@@ -45,7 +47,7 @@ export default class PartnersGallery extends Component {
                     )}
                 </div>
             </div>
-            </a>
+
 
         );
     }

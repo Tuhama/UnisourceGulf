@@ -29,7 +29,7 @@ export default class Loytec extends Component {
                         <br/>
                         The Intermediate Boys school consisting of two main buildings, several educational classrooms and labs and administration buildings in addition to basketball playground, mosque, theater, electrical building, and reception building. The school is serviced by mechanical, electrical, low voltage and security systems.
                     </span>
-                    <a href="http://www.loytec.com/case-studies/5530-case-study-ishbylia-boys-school-2017" target="_blank">
+                    <a href="http://www.loytec.com/case-studies/5530-case-study-ishbylia-boys-school-2017" target="_blank" rel="noopener noreferrer">
                      <button className="more-button">Read More </button>
                     </a>
                 </div>
@@ -41,7 +41,7 @@ export default class Loytec extends Component {
 
                         The school consists of two main buildings, educational classrooms and labs, an administration building, an additional basketball court, a mosque, and an building for power supply as well as a reception building. The school is serviced by mechanical, electrical low voltage and security systems.
                     </span>
-                    <a href="http://www.loytec.com/case-studies/5277-case-study-ishbylia-girls-school-2017" target="_blank">
+                    <a href="http://www.loytec.com/case-studies/5277-case-study-ishbylia-girls-school-2017" target="_blank" rel="noopener noreferrer">
                         <button className="more-button">Read More </button>
                     </a>
                 </div>
@@ -51,7 +51,7 @@ export default class Loytec extends Component {
                     <span>
                         The PAMA fahd al ahmad branch in Kuwait is the seat of the public authority of minority affairs in Kuwait. It is Kuwait’s first building that runs with a LonMark integrated building management system. The branch is connected with the headquarters via web interface for monitoring purposes. During the entire project, the ministry of public work was observing the building and the work progress.
                     </span>
-                    <a href="http://www.loytec.com/case-studies/4054-pama-fahd-al-ahmad-branch-kuwait-2015" target="_blank">
+                    <a href="http://www.loytec.com/case-studies/4054-pama-fahd-al-ahmad-branch-kuwait-2015" target="_blank" rel="noopener noreferrer">
                         <button className="more-button">Read More </button>
                     </a>
                 </div>
@@ -61,7 +61,7 @@ export default class Loytec extends Component {
                     <span>
                         Another PAMA branch, the seat of the public authority of minority affairs in Kuwait was automated by the LOYTEC Competence Partner Ahmed Isaq Co. However, this building is more advanced than the fahd al ahmad branch as additionally L-DALI lighting control is used for all building offices and corridors. The building is likewise connected with the headquarters through web interface for monitoring purposes.
                     </span>
-                    <a href="http://www.loytec.com/case-studies/4056-pama-west-al-jahra-branch-kuwait-2015" target="_blank">
+                    <a href="http://www.loytec.com/case-studies/4056-pama-west-al-jahra-branch-kuwait-2015" target="_blank" rel="noopener noreferrer">
                         <button className="more-button">Read More </button>
                     </a>
                 </div>
@@ -72,7 +72,7 @@ export default class Loytec extends Component {
                         The Kuwait fire directorate is Kuwait’s first building that is considered to be a smart and green building. The building was automated by the LOYTEC Competence Partner AHMED ISHAQ CO. using LOYTEC components. This made the entire automation project easy and effective and delivered satisfying results for the building owner.
                         In the project, BACNet/IP is used for the management system for electrical and mechanical systems. For the lighting control in meeting and training rooms, LON L-DALI controllers are deployed.
                     </span>
-                    <a href="http://www.loytec.com/case-studies/2320-fire-directorate-kuwait" target="_blank">
+                    <a href="http://www.loytec.com/case-studies/2320-fire-directorate-kuwait" target="_blank" rel="noopener noreferrer">
                         <button className="more-button">Read More </button>
                     </a>
                 </div>
