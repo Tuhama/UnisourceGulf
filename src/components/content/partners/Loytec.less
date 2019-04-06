@@ -10,41 +10,46 @@
 }
 
 .loytec-title{
-  display: grid;
-  grid-template-columns: auto auto;
   background: #fafafa;
-  justify-self: left;
   width: 100%;
-  height: 200px;
+  height: auto;
+
+
+  display: grid;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  @media screen and (min-width: 600px) {
+    grid-template-columns:1fr;
+  }
+  //grid-template-columns:auto auto;
+  justify-items: center;
   align-items: center;
 }
 
 .loytec-title h3{
   color: #2E2E2E;
-  font: normal normal normal 18px avenir-lt-w01_85-heavy1475544,sans-serif;
+  font: normal normal normal 4vmin avenir-lt-w01_85-heavy1475544,sans-serif;
 }
 
 .loytec-section{
-  padding-left: 2vw;
-  padding-right: 2vw;
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding: 2vw;
 
 }
 .loytec-section h2{
   color: #2b689c;
-  font: normal normal normal 21px avenir-lt-w01_85-heavy1475544,sans-serif;
+  font: normal normal normal 6vmin avenir-lt-w01_85-heavy1475544,sans-serif;
   justify-self: left;
   font-weight: bold;
   padding-top: 1vw;
   padding-bottom: 1vw;
 }
 .loytec-section span{
-  font: normal normal normal 17px avenir-lt-w01_85-heavy1475544,sans-serif;
+  font: normal normal normal 3vmin avenir-lt-w01_85-heavy1475544,sans-serif;
   justify-self: left;
   padding-top: 1vw;
   padding-bottom: 1vw;

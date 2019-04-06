@@ -35,16 +35,19 @@ import NETMIC from '../../../images/partners/2n/NET MIC.webp';
 export default class TwoN extends Component {
     render() {
         return (
-            <div className="n-container">
+            <div className="content">
                 <div className="n-header">
                     <div className="n-header-bg"></div>
-                    <img src={nLogo} alt="2N"/>
-                    <span className="n-header-font">
+                    <div className="n-header-content">
+                        <img src={nLogo} alt="2N"/>
+                        <span className="n-header-font">
                         2N is a leading European company engaged in the development and manufacture of products in the field of ICT and physical security. Their best-in-class portfolio of products and solutions are designed to makes life easier, better and more secure.
                     </span>
+                    </div>
+
                 </div>
 
-                <div className="gs-anchors">
+                <div className="n-anchors">
 
                     <a href="#IPIntercoms">IP INTERCOMS </a>
                     <a href="#IPAccessControl">IP ACCESS CONTROL</a>
@@ -157,7 +160,7 @@ export default class TwoN extends Component {
                 </a>
                 <a id="NETAudioSystems" href="#">
                 <div className="n-main-title">NET Audio Systems</div>
-                <div className={"gs-3c-product-section"}>
+                <div className={"n-3c-product-section"}>
                     <div>
                         <img src={AUDIOMANAGER} alt="2N® IP AUDIO MANAGER"/>
                         <span className="n-product-code">2N® IP AUDIO MANAGER</span>

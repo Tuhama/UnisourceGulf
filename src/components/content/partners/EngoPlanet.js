@@ -38,7 +38,7 @@ export default class EngoPlanet extends Component {
                     <span>
                         The EnGoPlanet from inception wanted to be recognized as a company who will produce and deliver high quality Solar Street Light solutions at a lower price point than other companies. The main components of Solar powered street lights are: battery, solar panel, MPPT controller, steel pole and arms. One of the most important part is definitely the battery. That is why EnGoPlanet developed strategic relationships with European and US battery producers. The battery for KOC Solar Street Light project was stored underground into the special box.
                     </span>
-                    <img src={engo3} alt=""/>
+                    <img src={engo3} alt="" style={{objectFit: "scale-down",width:"100%",height:"100%",}}/>
                 </div>
                 <div>
                     <span>

@@ -9,9 +9,17 @@ import loytec3 from '../../../images/partners/loytec/loytec3.webp';
 export default class Loytec extends Component {
     render() {
         return (
-            <div className='loytec-container'>
+            <div  className="content">
                 <div className="loytec-title">
-                    <img src={loytecLogo} alt=""/>
+                    <div>
+                        <img src={loytecLogo} alt=""  style={{
+                            width: "80%",
+                            height: "80%",
+                            display: "block",
+                            objectFit: "scale-down",
+                        }}/>
+                    </div>
+
                     <div>
                         <h3>The expert on intelligent network infrastructure products for building automation, focuses
                             on open and standardized communication protocols.</h3>
@@ -19,7 +27,18 @@ export default class Loytec extends Component {
                 </div>
                 <div className="loytec-section">
                     <h2>Ishbylia Intermediate Boys School, Kuwait, 2017 </h2>
-                    <img src={loytec1} alt=""/>
+                    <div>
+
+                    </div>
+                   <div>
+                       <img src={loytec1} alt="" style={{
+                           width: "80%",
+                           height: "80%",
+                           display: "block",
+                           objectFit: "scale-down",
+                           margin: "0 auto"
+                       }}/>
+                   </div>
                     <span>
                         Ishbylia Intermediate Boys School, Kuwait, 2017
                         <br/>
@@ -35,7 +54,15 @@ export default class Loytec extends Component {
                 </div>
                 <div className="loytec-section">
                     <h2>Ishbylia Intermediate Girls School, Kuwait, 2017</h2>
-                    <img src={loytec1} alt=""/>
+                   <div>
+                       <img src={loytec1} alt="" style={{
+                           width: "80%",
+                           height: "80%",
+                           display: "block",
+                           objectFit: "scale-down",
+                           margin: "0 auto"
+                       }}/>
+                   </div>
                     <span>
                         For the development of the educational buildings the Ministry of Education in Kuwait asked for a central BMS. This building management systems has to operate and integrate with the mechanical, electrical, and low voltage system for monitoring, controlling, and reporting. Ahmed Ishaq Co. as LOYTEC System Integrator/Full-Service Operator Asia presented an innovative solution with a reliable system that ensures cost reduction, energy savings, easier maintenance, and an operator-friendly user interface.
 
@@ -47,7 +74,15 @@ export default class Loytec extends Component {
                 </div>
                 <div  className="loytec-section">
                     <h2>PAMA fahd al ahmad branch, Kuwait, 2015</h2>
-                    <img src={loytec2} alt=""/>
+                   <div>
+                       <img src={loytec2} alt="" style={{
+                           width: "80%",
+                           height: "80%",
+                           display: "block",
+                           objectFit: "scale-down",
+                           margin: "0 auto"
+                       }}/>
+                   </div>
                     <span>
                         The PAMA fahd al ahmad branch in Kuwait is the seat of the public authority of minority affairs in Kuwait. It is Kuwait’s first building that runs with a LonMark integrated building management system. The branch is connected with the headquarters via web interface for monitoring purposes. During the entire project, the ministry of public work was observing the building and the work progress.
                     </span>
@@ -57,7 +92,15 @@ export default class Loytec extends Component {
                 </div>
                 <div className="loytec-section">
                     <h2>PAMA west Al Jahra branch, Kuwait, 2015</h2>
-                    <img src={loytec2} alt=""/>
+                   <div>
+                       <img src={loytec2} alt="" style={{
+                           width: "80%",
+                           height: "80%",
+                           display: "block",
+                           objectFit: "scale-down",
+                           margin: "0 auto"
+                       }}/>
+                   </div>
                     <span>
                         Another PAMA branch, the seat of the public authority of minority affairs in Kuwait was automated by the LOYTEC Competence Partner Ahmed Isaq Co. However, this building is more advanced than the fahd al ahmad branch as additionally L-DALI lighting control is used for all building offices and corridors. The building is likewise connected with the headquarters through web interface for monitoring purposes.
                     </span>
@@ -67,7 +110,16 @@ export default class Loytec extends Component {
                 </div>
                 <div className="loytec-section">
                     <h2>Fire Directorate, Kuwait, 2015</h2>
-                    <img src={loytec3} alt=""/>
+                    <div>
+                        <img src={loytec3} alt="" style={{
+                            width: "80%",
+                            height: "80%",
+                            display: "block",
+                            objectFit: "scale-down",
+                            margin: "0 auto"
+                        }}/>
+                    </div>
+
                     <span>
                         The Kuwait fire directorate is Kuwait’s first building that is considered to be a smart and green building. The building was automated by the LOYTEC Competence Partner AHMED ISHAQ CO. using LOYTEC components. This made the entire automation project easy and effective and delivered satisfying results for the building owner.
                         In the project, BACNet/IP is used for the management system for electrical and mechanical systems. For the lighting control in meeting and training rooms, LON L-DALI controllers are deployed.
