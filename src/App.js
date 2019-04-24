@@ -18,6 +18,7 @@ import RecentProjects from "./components/content/services/recentProjects/RecentP
 import Services from "./components/content/services/services/Services";
 import Solutions from "./components/content/services/solutions/Solutions";
 import CurrentProjects from "./components/content/services/currentProjects/CurrentProjects";
+import { BackTop } from 'antd';
 
 class App extends Component {
     render() {
@@ -58,7 +59,12 @@ class App extends Component {
                     <div className="r-side-margin"></div>
                     <Footer/>
                 </div>
+
                 <UniChatBot/>
+                <div>
+                    <BackTop  style={{ bottom:"10px",right:"10%"}}/>
+                    <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}></strong>
+                </div>
             </div>
 
         );
